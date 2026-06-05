@@ -2565,20 +2565,7 @@ INDEX_HTML = r"""<!doctype html>
     <div id="status" class="status" style="display: none;"><span class="status-dot"></span>服务加载中...</div>
   </div>
   <div class="btn-group">
-    <div class="routing-select-wrapper" style="display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.06); border: 1px solid var(--border-color); padding: 0 12px; border-radius: 8px; font-size: 13px; height: 38px;">
-      <label for="header_routing_country" style="color: var(--text-secondary); font-weight: 500; white-space: nowrap;">出站国家:</label>
-      <select id="header_routing_country" style="background: transparent; border: none; color: var(--text-primary); outline: none; cursor: pointer; font-size: 13px; font-weight: 600; padding: 0;">
-        <option value="">智能路由 / 所有</option>
-      </select>
-    </div>
-    <div class="routing-select-wrapper" style="display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.06); border: 1px solid var(--border-color); padding: 0 12px; border-radius: 8px; font-size: 13px; height: 38px;">
-      <label for="header_routing_ip_type" style="color: var(--text-secondary); font-weight: 500; white-space: nowrap;">IP类型:</label>
-      <select id="header_routing_ip_type" style="background: transparent; border: none; color: var(--text-primary); outline: none; cursor: pointer; font-size: 13px; font-weight: 600; padding: 0;">
-        <option value="all">所有IP类型</option>
-        <option value="residential">仅静态住宅IP</option>
-        <option value="hosting">仅机房IP</option>
-      </select>
-    </div>
+
     <div class="dropdown">
       <button id="github_btn" class="btn-primary" style="background: rgba(255, 255, 255, 0.08); border: 1px solid var(--border-color); color: var(--text-primary);">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" style="vertical-align: middle; margin-right: 4px;"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -2611,11 +2598,11 @@ INDEX_HTML = r"""<!doctype html>
         </a>
         <a href="javascript:void(0)" onclick="openNetworkModal()">
           <svg xmlns="http://www.w3.org/2000/svg" style="width:14px; height:14px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-          代理及网络设置
+          代理设置
         </a>
         <a href="javascript:void(0)" onclick="openGatewayModal()">
           <svg xmlns="http://www.w3.org/2000/svg" style="width:14px; height:14px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
-          网关
+          网关设置
         </a>
         <a href="javascript:void(0)" onclick="openLogsModal()">
           <svg xmlns="http://www.w3.org/2000/svg" style="width:14px; height:14px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
@@ -2731,7 +2718,7 @@ INDEX_HTML = r"""<!doctype html>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
         <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
           <svg xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; color: var(--primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-          代理与网络设置
+          代理设置
         </h3>
         <button type="button" onclick="closeNetworkModal()" style="background: transparent; border: none; padding: 4px; cursor: pointer; color: var(--text-secondary); width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; border-radius: 50%;" onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background='transparent'">
           <svg xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
@@ -2771,6 +2758,15 @@ INDEX_HTML = r"""<!doctype html>
             <label class="form-label" for="net_force_country">锁定国家地区</label>
             <select id="net_force_country" class="input-field" style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color); color: var(--text-primary); outline: none; cursor: pointer; width: 100%; height: 40px; border-radius: 8px; padding: 0 12px;">
               <option value="">正在加载节点国家...</option>
+            </select>
+          </div>
+          
+          <div class="form-group" style="margin-bottom: 12px;">
+            <label class="form-label" for="net_routing_ip_type">IP 出站类型过滤</label>
+            <select id="net_routing_ip_type" class="input-field" style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color); color: var(--text-primary); outline: none; cursor: pointer; width: 100%; height: 40px; border-radius: 8px; padding: 0 12px;">
+              <option value="all">所有IP类型</option>
+              <option value="residential">仅静态住宅IP</option>
+              <option value="hosting">仅机房IP</option>
             </select>
           </div>
           
@@ -2843,7 +2839,7 @@ INDEX_HTML = r"""<!doctype html>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
         <h3 style="margin: 0; font-size: 18px; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
           <svg xmlns="http://www.w3.org/2000/svg" style="width:20px; height:20px; color: var(--primary);" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
-          网关运行状态与自检
+          网关设置与自检
         </h3>
         <button type="button" onclick="closeGatewayModal()" style="background: transparent; border: none; padding: 4px; cursor: pointer; color: var(--text-secondary); width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; border-radius: 50%;" onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background='transparent'">
           <svg xmlns="http://www.w3.org/2000/svg" style="width:18px; height:18px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
@@ -3482,85 +3478,7 @@ $("btn_batch_test").onclick = async () => {
   }
 };
 
-function updateHeaderRoutingControls() {
-  const selectCountry = $("header_routing_country");
-  const selectIpType = $("header_routing_ip_type");
-  if (!selectCountry || !selectIpType) return;
-  
-  // 1. Countries list
-  const countries = Array.from(new Set(nodes.map(n => n.country).filter(Boolean))).sort();
-  const currentOptions = Array.from(selectCountry.options).map(o => o.value).filter(v => v && v !== "fixed_ip_mode");
-  
-  const rebuild = JSON.stringify(countries) !== JSON.stringify(currentOptions);
-  if (rebuild) {
-    selectCountry.innerHTML = '<option value="">智能路由 / 所有</option>' + 
-      countries.map(c => `<option value="${esc(c)}">${esc(c)}</option>`).join("");
-  }
-  
-  // 2. Set value
-  if (state.routing_mode === "fixed_ip") {
-    if (!selectCountry.querySelector('option[value="fixed_ip_mode"]')) {
-      const opt = document.createElement("option");
-      opt.value = "fixed_ip_mode";
-      opt.textContent = "固定 IP 模式";
-      opt.disabled = true;
-      selectCountry.appendChild(opt);
-    }
-    selectCountry.value = "fixed_ip_mode";
-  } else if (state.routing_mode === "fixed_region") {
-    selectCountry.value = state.force_country || "";
-  } else {
-    selectCountry.value = "";
-  }
-  
-  if (state.routing_mode !== "fixed_ip") {
-    const fixedIpOpt = selectCountry.querySelector('option[value="fixed_ip_mode"]');
-    if (fixedIpOpt) {
-      fixedIpOpt.remove();
-    }
-  }
-  
-  selectIpType.value = state.routing_ip_type || "all";
-}
 
-async function saveHeaderRouting() {
-  const selectCountry = $("header_routing_country");
-  const selectIpType = $("header_routing_ip_type");
-  
-  let routingMode = "auto";
-  let forceCountry = selectCountry.value;
-  
-  if (forceCountry === "fixed_ip_mode") {
-    routingMode = "fixed_ip";
-    forceCountry = state.force_country || "";
-  } else if (forceCountry) {
-    routingMode = "fixed_region";
-  } else {
-    routingMode = "auto";
-  }
-  
-  const routingIpType = selectIpType.value;
-  
-  try {
-    const response = await fetch("./api/update_routing", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        routing_mode: routingMode,
-        force_country: forceCountry,
-        routing_ip_type: routingIpType
-      })
-    });
-    const result = await response.json();
-    if (result.ok) {
-      load();
-    } else {
-      alert("更新路由失败: " + result.error);
-    }
-  } catch (e) {
-    alert("更新出站路由网络请求失败");
-  }
-}
 
 async function load(){
   const r=await fetch("./api/nodes"); 
@@ -3570,7 +3488,6 @@ async function load(){
   
   stableSortNodes();
   updateCountryFilter();
-  updateHeaderRoutingControls();
   render();
 
   if (state.is_connecting) {
@@ -3581,8 +3498,6 @@ async function load(){
 $("search").oninput=()=>{ currentPage = 1; render(); };
 $("country_filter").onchange=()=>{ currentPage = 1; render(); };
 $("ip_type_filter").onchange=()=>{ currentPage = 1; render(); };
-$("header_routing_country").onchange = saveHeaderRouting;
-$("header_routing_ip_type").onchange = saveHeaderRouting;
 
 $("refresh").onclick=async()=>{ 
   $("refresh").disabled=true; 
@@ -3788,6 +3703,7 @@ function openNetworkModal() {
     $("net_port").value = state.port || 8787;
     $("net_suffix").value = state.secret_path || "";
     $("net_proxy_port").value = state.proxy_port || 7928;
+    $("net_routing_ip_type").value = state.routing_ip_type || "all";
   }
   
   populateRoutingCountries();
@@ -3813,6 +3729,7 @@ async function saveNetwork(e) {
   const proxyPort = parseInt($("net_proxy_port").value);
   const routingMode = $("net_routing_mode").value;
   const forceCountry = $("net_force_country").value;
+  const routingIpType = $("net_routing_ip_type").value;
   
   if (isNaN(port) || port < 1 || port > 65535) {
     errorDivEl.textContent = "网页管理端口范围必须在 1 至 65535 之间";
@@ -3856,7 +3773,8 @@ async function saveNetwork(e) {
         secret_path: suffix,
         proxy_port: proxyPort,
         routing_mode: routingMode,
-        force_country: forceCountry
+        force_country: forceCountry,
+        routing_ip_type: routingIpType
       })
     });
     
@@ -4653,6 +4571,7 @@ class Handler(BaseHTTPRequestHandler):
                 new_proxy_port = payload.get("proxy_port")
                 routing_mode = str(payload.get("routing_mode") or "auto").strip()
                 force_country = str(payload.get("force_country") or "").strip()
+                routing_ip_type = str(payload.get("routing_ip_type") or "all").strip()
                 
                 try:
                     new_port_int = int(new_port)
@@ -4681,6 +4600,9 @@ class Handler(BaseHTTPRequestHandler):
                 if routing_mode not in ("auto", "fixed_ip", "fixed_region"):
                     self.send_json({"ok": False, "error": "无效的路由配置模式"}, HTTPStatus.BAD_REQUEST)
                     return
+                if routing_ip_type not in ("all", "residential", "hosting"):
+                    self.send_json({"ok": False, "error": "无效的IP出站类型过滤"}, HTTPStatus.BAD_REQUEST)
+                    return
                 
                 ui_cfg = load_ui_config()
                 expected_port = ui_cfg.get("port", 8787)
@@ -4692,6 +4614,7 @@ class Handler(BaseHTTPRequestHandler):
                 ui_cfg["proxy_port"] = new_proxy_port_int
                 ui_cfg["routing_mode"] = routing_mode
                 ui_cfg["force_country"] = force_country
+                ui_cfg["routing_ip_type"] = routing_ip_type
                 
                 auth_file = DATA_DIR / "ui_auth.json"
                 with lock:
